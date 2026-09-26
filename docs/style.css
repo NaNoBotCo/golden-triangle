@@ -1,0 +1,51 @@
+:root {
+  --bg: #0a0a1a;
+  --text: #f0e6c0;
+  --gold: #d4af37;
+  --river: #40a4df;
+  --thai: #ed1c24;
+  --lao: #002868;
+  --myanmar: #f7d117;
+  --muted: #b0a890;
+  --card-bg: rgba(255,255,255,0.05);
+  --border: rgba(212,175,55,0.3);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: Thonburi, Sathu, "Noto Serif Thai", Georgia, serif;
+  font-size: 18px; line-height: 1.7; overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; border-radius: 0.5rem; }
+a { color: var(--gold); text-decoration: underline; text-underline-offset: 0.2em; }
+a:hover { color: #fff; }
+header {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.8rem 1rem; background: rgba(10,10,26,0.9);
+  border-bottom: 1px solid var(--border);
+}
+header .site-title { font-size: 1.2rem; letter-spacing: 0.1em; color: var(--gold); text-decoration: none; }
+.canvas-wrap { width: 100%; height: 40vh; min-height: 200px; max-height: 400px; position: relative; }
+.canvas-wrap canvas { width: 100%; height: 100%; display: block; }
+main { max-width: 800px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+h1 { font-size: 2rem; color: var(--gold); margin: 1.5rem 0 0.5rem; line-height: 1.2; }
+h2 { font-size: 1.4rem; color: var(--gold); margin: 2rem 0 0.5rem; line-height: 1.3; }
+p { margin: 0.8rem 0; }
+p.en { color: var(--muted); }
+ul, ol { margin: 0.8rem 0 0.8rem 1.5rem; }
+li { margin: 0.3rem 0; }
+blockquote { border-left: 3px solid var(--gold); padding-left: 1rem; margin: 1rem 0; color: var(--muted); font-style: italic; }
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 0.5rem; padding: 1rem; margin: 1rem 0; }
+footer { background: rgba(10,10,26,0.9); border-top: 1px solid var(--border); padding: 1.5rem 1rem; text-align: center; font-size: 0.9rem; }
+footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-bottom: 0.8rem; }
+footer nav a { color: var(--text); text-decoration: none; padding: 0.3rem 0.5rem; }
+footer nav a:hover { color: var(--gold); }
+footer .credit { color: var(--muted); }
+@media (min-width: 900px) {
+  main { max-width: 1000px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
