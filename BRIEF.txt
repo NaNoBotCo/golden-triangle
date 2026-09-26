@@ -1,0 +1,31 @@
+Build the Golden Triangle minisite, then publish it. NaN asked for this on 2026-09-26:
+"Can I get it to actually make the website and post it to github?" That is her word
+for this one site.
+
+WHERE
+  ~/Developer/claude code projects/golden-triangle/
+  brief/plan.txt   her nine-page plan: one line, topics, photo names, art for each page
+  brief/style.css  the stylesheet the chat drafted; use it as the base
+  docs/            the site: docs/index.html, docs/history/index.html, docs/sop-ruak/,
+                   docs/chiang-saen/, docs/hills/, docs/river/, docs/people/, docs/visit/,
+                   docs/sources/, one shared docs/style.css and docs/art.js
+
+EACH PAGE
+  - Its art from the plan, drawn with math on a canvas in docs/art.js (plain JS, no
+    library). Gentle motion, inside prefers-reduced-motion: no-preference; a still
+    frame otherwise.
+  - Thai first, English under it, for every heading and paragraph. The topics the plan
+    lists, in plain words, as real content: several paragraphs a page.
+  - The same header and the same navigation to all nine pages; the footer credit.
+  - No photos yet: she will add the files named in the plan later. Put no <img> tags
+    that point at missing files.
+  - Drop the Google Fonts import; use system fonts (Thonburi, Sathu, Noto Serif Thai,
+    Georgia, serif).
+
+THEN
+  1. Share card: docs/card.png, 1200x630, the site's name in Thai and English on its
+     art, made with headless Chrome. Every page's head points at it.
+  2. Check: python3 ~/.claude/bin/stylecheck.py on docs/, every internal link and
+     file present, every page opens.
+  3. Publish: ~/.claude/bin/new-site "$HOME/Developer/claude code projects/golden-triangle" golden-triangle "Golden Triangle — minisite"
+  4. Answer with the live address and one line on anything you left out.
