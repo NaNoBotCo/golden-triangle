@@ -23,7 +23,7 @@ EACH PAGE
     Georgia, serif).
 
 THEN
-  1. Share card: docs/card.png, 1200x630, the site's name in Thai and English on its
+  1. Share card: docs/card.jpg, 1200x630, the site's name in Thai and English on its
      art, made with headless Chrome. Every page's head points at it.
   2. Check: python3 ~/.claude/bin/stylecheck.py on docs/, every internal link and
      file present, every page opens.
