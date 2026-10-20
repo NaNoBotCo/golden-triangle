@@ -1,0 +1,34 @@
+{
+ "chiang-saen/": {
+  "alt": "Card: เมืองเชียงแสน, สามเหลี่ยมทองคำ · Golden Triangle",
+  "image": "og/chiang-saen.jpg"
+ },
+ "hills/": {
+  "alt": "Card: ขึ้นเขา, สามเหลี่ยมทองคำ · Golden Triangle",
+  "image": "og/hills.jpg"
+ },
+ "history/": {
+  "alt": "Card: ประวัติศาสตร์, สามเหลี่ยมทองคำ · Golden Triangle",
+  "image": "og/history.jpg"
+ },
+ "people/": {
+  "alt": "Card: ผู้คน, สามเหลี่ยมทองคำ · Golden Triangle",
+  "image": "og/people.jpg"
+ },
+ "river/": {
+  "alt": "Card: แม่น้ำ, สามเหลี่ยมทองคำ · Golden Triangle",
+  "image": "og/river.jpg"
+ },
+ "sop-ruak/": {
+  "alt": "Card: สบรวก, สามเหลี่ยมทองคำ · Golden Triangle",
+  "image": "og/sop-ruak.jpg"
+ },
+ "sources/": {
+  "alt": "Card: ที่มา, สามเหลี่ยมทองคำ · Golden Triangle",
+  "image": "og/sources.jpg"
+ },
+ "visit/": {
+  "alt": "Card: วางแผนการเดินทาง, สามเหลี่ยมทองคำ · Golden Triangle",
+  "image": "og/visit.jpg"
+ }
+}
